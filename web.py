@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request #imort flask and render template and request
 import weather
+import os
 app = Flask(__name__)    #create a variable
 
 @app.route("/")          #this creates a page
@@ -17,4 +18,5 @@ def about():
 		return render_template('about.html')
 
 if __name__ == "__main__": #these 2 lines tell the application to run
-    app.run()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
