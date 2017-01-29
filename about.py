@@ -6,7 +6,7 @@
 		<div class= "jumbotron">
 			<div class= "container">
 				<h1>Welcome to Advice using Yelp</h1>
-			<a href="{{ url_for('index') }}">Back to Home Page</a>
+			<a href="{{ url_for('index2') }}">Back to Home Page</a>
 			</div>
 		</div>
 	</body>

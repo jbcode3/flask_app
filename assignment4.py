@@ -1,16 +1,16 @@
-
-<html>
+#assignment4.py
+html>
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	</head>
 	<body>
 		<div class= "jumbotron">
 			<div class= "container">
-				{% if businesses %}
-					<h1>{{ businesses }}</h1>
-					<a href="{{ url_for('index') }}"> Look up another business </a>
+				{% if forecast %}
+					<h1>{{ forecast }}</h1>
+					<a href="{{ url_for('assignment4') }}"> Look up another address </a>
 				 {% else %}	
-				 	<h1>Hello! Enter your address to search for information about local businesses. </h1>
+				 	<h1>Hello! Where do you live?</h1>
 				 	<form action="/" class='form-inline'>
 				 		<div class="form-group">
 				 			<input type="text" name="address" placeholder="City, State" class="form-control">

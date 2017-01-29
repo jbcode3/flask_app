@@ -8,7 +8,7 @@
 			<div class= "container">
 				{% if businesses %}
 					<h1>{{ businesses }}</h1>
-					<a href="{{ url_for('index') }}"> Look up another business </a>
+					<a href="{{ url_for('index2') }}"> Look up another business </a>
 				 {% else %}	
 				 	<h1>Hello! Enter your address to search for information about local businesses. </h1>
 				 	<form action="/" class='form-inline'>
